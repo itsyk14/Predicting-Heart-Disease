@@ -9,7 +9,8 @@ This database contains 76 attributes, but all published experiments refer to usi
 In particular, the Cleveland database is the only one that has been used by ML researchers to
 this date. The "goal" field refers to the presence of heart disease in the patient. It is integer valued from 0 (no presence) to 4.
 Dataset description:
-
+['age', 'sex', 'cp', 'trestbps', 'chol', 'fbs', 'restecg', 'thalach',
+       'exang', 'oldpeak', 'slope', 'ca', 'thal', 'target']
   Age: number
   
   Sex: Binary
@@ -34,12 +35,6 @@ Dataset description:
   
   Ca: number of major vessels (0-3) colored by flourosopy
   
-  Thal: 3 = normal; 6 = fixed defect; 7 = reversable defect
+  Thal: normal, fixed defect,reversable defect
 
-  num0 = level 0 heart failure (no HF)
-  num1 = level 1 heart failure
-  num2 = level 2 heart failure
-  num3 = level 3 heart failure
-  num4 = level 4 heart failure (most severe)
-
-Output: severity of heart failure on a scale of 0-4, with 0 being no HF, and 4 being the heighest severity of HF.
+  Target 0 or 1
